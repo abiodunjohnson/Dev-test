@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../../../component/navbar/navbar'
-// import { Logo } from '../../../asset/icon'
+import { IconGloba, IconMove, BriefcaseIcon, IconDesign, IconLocation } from '../../../asset/icon'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-// import 'react-tabs/style/react-tabs.css';
 import "./gigs.css"
 
-
+// interface IGigs {
+//     icon: any;
+// }
 const Gigs = () => {
     return (
         <div>
@@ -21,7 +22,39 @@ const Gigs = () => {
     </TabList>
 
     <TabPanel >
-      <div>Any content 1</div>
+      <div className="tab-keyword-wrapper">
+
+     
+        <div className="tab-item-container">Freelance </div>
+       
+        <div className="tab-item-container"> <IconLocation/>Keyword</div>
+        <div className="tab-item-container"> <IconMove />Location</div>
+        <div className="tab-item-container"> <IconGloba /> Retome Friendly</div>
+        <div className="tab-item-container"> Design</div>
+        <div className="tab-item-container"><BriefcaseIcon/>Contact</div>
+
+      </div>
+
+      <div className="">
+        <table>
+          <thead>
+            <tr>
+              <th>Role</th>
+              <th>Company</th>
+              <th>Date</th>
+              <th>Salary($)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Product Designer</td>
+              <td>Rocket</td>
+              <td>3rd, June 2020</td>
+              <td>20,000 - 30,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </TabPanel>
     <TabPanel>
     <div>Any content 2</div>

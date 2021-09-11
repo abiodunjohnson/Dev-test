@@ -19,6 +19,11 @@
   margin-right: 17px;
 }
 
+.menu-icon__active {
+  margin-right: 17px;
+  color: #fbb30b;
+}
+
 .sidebar-item__active {
   color: #fbb30b;
   width: 100%;
