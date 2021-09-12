@@ -1,5 +1,6 @@
 import React from 'react'
-import { HomeIcon, Logo, BriefcaseIconFill, CompanyIcon, AccountIcon } from '../../asset/icon';
+import { HomeIcon, BriefcaseIconFill, CompanyIcon, AccountIcon } from '../../asset/icon';
+import Logo from '../../asset/icons/logo.svg'
 import {Route} from 'react-router'
 import SidebarItem from '../../component/sidebar/sidebar';
 import Summary from './summary/summary';
@@ -15,7 +16,7 @@ const Dashboard = () => {
     <div className="dashboard">
         <div className="dashboard-sidebar">
             <div className="dashboard-sidebar-logo">
-            
+            <img src={Logo} alt="Logo" />
             </div>
             <div className="dashboard-sidebar-menu">
             <SidebarItem icon={<HomeIcon/>} title={"Dashboard"} navigationTo={"/dashboard"}/>
