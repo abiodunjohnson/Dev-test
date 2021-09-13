@@ -159,16 +159,140 @@ form td:last-child {
 }
 
 form * {
-  font-size: 28px;
+  font-size: 15px;
+  color: #565d74;
+  display: grid;
+}
+
+input {
+  border: 1px solid #e5e5e5;
+  padding: 4px 0px 4px 0px;
+  border-radius: 4px;
+}
+
+.from-wrap {
+  display: grid;
 }
 
 .newgig-wrapper {
   display: flex;
+  justify-content: space-around;
+}
+
+.inner-wrapper {
+  /* display: grid; */
 }
 
 .data-wrapper {
-  background: #ffffff 0% 0% no-repeat padding-box;
+  background: #ffffff;
   border: 1px solid #ececec;
-  border-radius: 20px;
+  border-radius: 10px;
   opacity: 1;
+  padding: 2rem 4rem 2rem 2rem;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.label-text {
+  color: #565d74;
+}
+
+.first-inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* TAGS */
+
+.react-tag-input__tag__content {
+  outline: 0;
+  border: none;
+  white-space: nowrap;
+  padding: 0 0.46875em;
+}
+
+.react-tag-input__tag__content {
+  outline: 0;
+  border: none;
+  white-space: nowrap;
+  padding: 0 0.46875em;
+  color: #f5d17f;
+}
+.react-tag-input__tag {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 0.85em;
+  line-height: 1;
+  background: #faebc7;
+  border-radius: 3px;
+  color: #faebc7;
+}
+
+.react-tag-input__tag__remove {
+  position: relative;
+  height: 2em;
+  width: 2em;
+  font-size: 0.85em;
+  cursor: pointer;
+  background: #faebc7;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.react-tag-input__input {
+  width: auto;
+  flex-grow: 1;
+  height: 1.875em;
+  padding: 0 0 0 0.1875em;
+  margin: 0 0.1875em;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  background: transparent;
+  color: #e5e5e5;
+  border: none;
+  border-radius: 3px;
+  outline: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+}
+
+.react-tag-input__tag__remove:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: " ";
+  height: 0.9em;
+  width: 0.15em;
+  background-color: #f5d17f;
+}
+
+.tag-header {
+  color: #565d74;
+  font-size: 12px;
+}
+
+.suggest-tag-header {
+  font-size: 12px;
+  color: #565d74;
+  font-weight: 500;
+}
+
+.tag-list {
+  display: flex;
+  align-items: center;
+  padding-left: 0px;
+}
+
+.tag-item-wrapper {
+  display: flex;
+  padding-left: 20px;
+}
+
+.tag-item {
+  color: #565d74;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 10px;
+  text-decoration: underline;
 }

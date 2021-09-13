@@ -6,20 +6,34 @@ import Design from '../../../asset/icons/icon-design.svg'
 import Remote from '../../../asset/icons/icon-globe.svg'
 import Arrow from '../../../asset/icons/icon-arrows.svg'
 import Contact from '../../../asset/icons/icon-briefcase.svg'
+import ReactTagInput from "@pathofdev/react-tag-input";
+import "@pathofdev/react-tag-input/build/index.css";
 
 import { IconGloba, IconMove, BriefcaseIcon, IconArrow, IconDesign, IconLocation } from '../../../asset/icon'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import "./gigs.css"
 
-// interface IGigs {
-//     icon: any;
-// }
 
-const options = [
-  'Location'
+
+const options = [  'Location'
 ];
+
+
 const defaultOption = options[0];
 const Gigs = () => {
+  const [tags, setTags] = React.useState(["Add tag"])
+  // const [tags, setTags] = React.useState(props.tags);
+  // const removeTags = indexToRemove => {
+	// 	setTags([...tags.filter((_, index) => index !== indexToRemove)]);
+	// };
+  // const addTags = event => {
+	// 	if (event.target.value !== "") {
+	// 		setTags([...tags, event.target.value]);
+	// 		props.selectedTags([...tags, event.target.value]);
+	// 		event.target.value = "";
+	// 	}
+	// };
+
     return (
         <div>
             <Navbar/>
@@ -112,12 +126,57 @@ const Gigs = () => {
 
               <div className="newgig-wrapper">
                 <div className="data-wrapper">
-                  <div className="">Basic Data</div>
-                  <div className="">Renumeration</div>
+               
+             <div className="inner-wrapper"> 
+                 <input className="input-field" value="Basic Data" type="radio"  />
+                    <label htmlFor="company" className="label-text">Basic Data</label>
+              </div>
+                   
+              <div className="inner-wrapper"> 
+                    <input className="input-field" type="radio"  />
+                    <label htmlFor="company" className="label-text">Renumeration</label>
+              </div>
                 </div>
                 <div className="data-wrapper">
-                  <div className="">Basic Data</div>
-                  <div className="">Renumeration</div>
+                <form className="from-wrap">
+                 
+                  <div className="first-inner-wrapper">
+                  <div className="inner-wrapper">
+                    <label htmlFor="role">Role</label>
+                    
+                    <input type="text" id="role"  />
+                    </div>
+                  
+                  <div className="inner-wrapper">
+                    <label htmlFor="company">Company</label>
+                    <input className="input-field" type="text" id="company"  />
+                    </div>
+                   </div>
+
+                    <div className="inner-wrapper">
+                   
+                    <input className="input-field" placeholder="Address" type="text"   />
+                    </div>
+                    <div className="tags-input">
+                      <h5 className="tag-header">Add tag</h5>
+                    <ReactTagInput 
+                     tags={tags} 
+                     onChange={(newTags) => setTags(newTags)}
+                     placeholder="Add more tags"
+                     maxTags={10}
+                    />
+                    <ul className="tag-list">
+                      <p className="suggest-tag-header">Suggested tags:</p>
+                      <div className="tag-item-wrapper">
+                        <li className="tag-item">full time</li>
+                        <li className="tag-item">contract</li>
+                        <li className="tag-item">freelance</li>
+                      </div>
+                      
+                    </ul>
+		
+		</div>
+      </form>
                 </div>
             
               </div>
