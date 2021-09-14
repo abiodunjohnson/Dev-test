@@ -192,6 +192,15 @@ input {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
 }
 
+.renume-wrapper {
+  background: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  opacity: 1;
+  padding: 2rem 4rem 2rem 2rem;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+}
+
 .label-text {
   color: #565d74;
 }
@@ -257,6 +266,14 @@ input {
   -webkit-appearance: none;
 }
 
+.react-tag-input__input::placeholder,
+.react-tag-input__input:-moz-placeholder,
+.react-tag-input__input:-ms-input-placeholder,
+.react-tag-input__input::-moz-placeholder,
+.react-tag-input__input::-webkit-input-placeholder {
+  color: #e5e5e5;
+}
+
 .react-tag-input__tag__remove:after {
   position: absolute;
   top: 50%;
@@ -295,4 +312,18 @@ input {
   font-weight: 500;
   margin-right: 10px;
   text-decoration: underline;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.button-renum-wrapper {
+  display: flex;
+  justify-content: end;
+  margin-top: 50px;
+}
+
+.company-wrapper {
+  margin-left: 20px;
 }

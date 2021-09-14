@@ -10,7 +10,8 @@ interface Props {
   radius: string
   width: string;
   padding: string;
-  margin: string
+  margin: string;
+  
 }
 
 const Button: React.FC<Props> = ({ 
@@ -34,7 +35,7 @@ const Button: React.FC<Props> = ({
          height,
          width,
          padding,
-         margin
+         margin,
       }}
     >
     {children}
