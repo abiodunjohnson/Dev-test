@@ -1,0 +1,49 @@
+[
+    {
+        "id": 1,
+        "role": "Product Designer",
+        "company": "Bannco",
+        "date": "20th, June 2020",
+        "salary": "20,000-30,000"
+    },
+
+    {
+        "id": 2,
+        "role": "Project Manager",
+        "company": "Conoil",
+        "date": "10th, July 2020",
+        "salary": "40,000-40,000"
+    },
+
+    {
+        "id": 3,
+        "role": "Front-end Developer",
+        "company": "Vind",
+        "date": "23rd, August 2020",
+        "salary": "25,000-35,000"
+    },
+
+    {
+        "id": 4,
+        "role": "Back-end Developer",
+        "company": "Stutern",
+        "date": "16th, April 2020",
+        "salary": "26,000-37,000"
+    },
+
+    {
+        "id": 5,
+        "role": "Fullstack Developer",
+        "company": "Google",
+        "date": "20th, December 2020",
+        "salary": "40,000-50,000"
+    },
+
+    {
+        "id": 6,
+        "role": "Head of Engineering",
+        "company": "Access Bank",
+        "date": "20th, June 2020",
+        "salary": "50,000-70,000"
+    }
+]

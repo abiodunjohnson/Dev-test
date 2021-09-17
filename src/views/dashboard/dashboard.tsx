@@ -7,6 +7,7 @@ import Summary from './summary/summary';
 import Gigs from './gigs/gigs';
 import Company from './company/company';
 import Account from './account/account';
+import CreateGig from './gigs/create_gig/create_gig'
 import './dashboard.css'
 
 
@@ -28,6 +29,7 @@ const Dashboard = () => {
         <div className="dashboard-content">
             <Route path="/dashboard" exact component={Summary} />
             <Route path="/dashboard/gigs" exact component={Gigs} />
+            <Route path="/dashboard/gigs/create_gig" exact component={CreateGig} />
             <Route path="/dashboard/company" exact component={Company} />
             <Route path="/dashboard/account" exact component={Account} />
         </div>
